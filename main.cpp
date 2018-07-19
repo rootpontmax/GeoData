@@ -65,7 +65,8 @@ static void CreateGeometryData()
     for( int i = 0; i < 8; ++i )
     {
         const uint64_t timeA = GetProcessTime();
-        ico = std::move( SplitIcosahedron( ico ) );
+        //ico = std::move( SplitIcosahedron( ico ) );
+        ico = SplitIcosahedron( ico );
         CheckIcosahedron( ico );
         ReportIcosahedron( ico );
         const uint64_t timeB = GetProcessTime();
@@ -127,8 +128,8 @@ int main( int argc, const char * argv[] )
     {
         std::cout << "Wrong arguments count"<< std::endl;
         std::cout << "Usage:"<< std::endl;
-        std::cout << "/t[" << pCreateGeomCmd << "] - Create geometry"<< std::endl;
-        std::cout << "/t[" << pCreateDataCmd << "] - Create geoid data"<< std::endl;
+        std::cout << "\t[" << pCreateGeomCmd << "] - Create geometry"<< std::endl;
+        std::cout << "\t[" << pCreateDataCmd << "] - Create geoid data"<< std::endl;
         return 0;
     }
     

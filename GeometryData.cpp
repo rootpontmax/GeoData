@@ -74,11 +74,13 @@ void SEdge::RegisterFace( const int id )
         }
     abort();
 }
+/*
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 bool SEdge::operator==( const SEdge& rhs ) const
 {
     return ( idA == rhs.idA && idB == rhs.idB );
 }
+*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 SFace::SFace( const int _regionID, const int idA, const int idB, const int idC ) :
     regionID( _regionID ),
@@ -340,7 +342,7 @@ SIcosahedron CreateIcosahedron()
     ico.vert.push_back( SVert(  B, -A,  C ) ); // 10
     ico.vert.push_back( SVert( -B, -A,  C ) ); // 12
     
-    // Trianlges
+    // Trianlges. Create and assign regionID
     int regionID = 0;
     ico.face.push_back( SFace( regionID++, 0,  6, 1 ) );
     ico.face.push_back( SFace( regionID++, 0, 11, 6 ) );

@@ -31,7 +31,7 @@ struct SEdge
     SEdge( const int _idA, const int _idB );
     
     void    RegisterFace( const int id );
-    bool    operator==( const SEdge& rhs ) const;
+    //bool    operator==( const SEdge& rhs ) const;
     
     int         idA;        // Original point
     int         idB;        // Original point
