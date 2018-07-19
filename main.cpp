@@ -22,15 +22,16 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 static const size_t g_memorySize = 256 << 20;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-static void CalculateIcosahedron()
+static int GetLimitedPartition()
 {
     int countV = 3;
     int countT = 1;
     int countE = 3;
-    int n = 0;
+    int n = -1;
     int patchHierarchyTrianglesCount = 0;
     while( countV <= 65536 )
     {
+        ++n;
         patchHierarchyTrianglesCount += countT;
         const int totalTriaCount = countT;
         const int textureSizeA = static_cast< int >( sqrt( (double)totalTriaCount ) );
@@ -47,16 +48,18 @@ static void CalculateIcosahedron()
         countV = countV + countE;
         countE = countE * 2 + countT * 3;
         countT *= 4;
-        
-        ++n;
     }
+    
+    return n;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 static void CreateGeometryData()
 {
     std::cout << "Create geometry data..." << std::endl;
     
-    CalculateIcosahedron();
+    // Define the limited partition
+    const int limitedPartition = GetLimitedPartition();
+    printf( "Limited partition is: %d\n", limitedPartition );
         
     SIcosahedron ico = CreateIcosahedron();
     CheckIcosahedron( ico );
