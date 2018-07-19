@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F5425D820F3D05100228CE5 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425AE20F3D05100228CE5 /* tinystr.cpp */; };
+		2F5425D920F3D05100228CE5 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425B020F3D05100228CE5 /* tinyxml.cpp */; };
+		2F5425DA20F3D05100228CE5 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425B220F3D05100228CE5 /* tinyxmlerror.cpp */; };
+		2F5425DB20F3D05100228CE5 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425B320F3D05100228CE5 /* tinyxmlparser.cpp */; };
+		2F5425DC20F3D05100228CE5 /* jpgd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425CC20F3D05100228CE5 /* jpgd.cpp */; };
+		2F5425DD20F3D05100228CE5 /* jpge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425CE20F3D05100228CE5 /* jpge.cpp */; };
+		2F5425DE20F3D05100228CE5 /* TerraData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425D120F3D05100228CE5 /* TerraData.cpp */; };
+		2F5425DF20F3D05100228CE5 /* DataCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425D220F3D05100228CE5 /* DataCollector.cpp */; };
+		2F5425E020F3D05100228CE5 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425D420F3D05100228CE5 /* Utils.cpp */; };
+		2F5425E120F3D05100228CE5 /* GeometryData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425D620F3D05100228CE5 /* GeometryData.cpp */; };
+		2F5425E220F3D05100228CE5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F5425D720F3D05100228CE5 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F54259E20F3D01E00228CE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F5425A020F3D01E00228CE5 /* GeoData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeoData; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5425AA20F3D05000228CE5 /* DataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollector.h; sourceTree = "<group>"; };
+		2F5425AB20F3D05000228CE5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		2F5425AC20F3D05100228CE5 /* GeometryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryData.h; sourceTree = "<group>"; };
+		2F5425AE20F3D05100228CE5 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinystr.cpp; sourceTree = "<group>"; };
+		2F5425AF20F3D05100228CE5 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinystr.h; sourceTree = "<group>"; };
+		2F5425B020F3D05100228CE5 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		2F5425B120F3D05100228CE5 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		2F5425B220F3D05100228CE5 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		2F5425B320F3D05100228CE5 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		2F5425BB20F3D05100228CE5 /* dgph */ = {isa = PBXFileReference; lastKnownFileType = file; path = dgph; sourceTree = "<group>"; };
+		2F5425C520F3D05100228CE5 /* data.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.mdb; sourceTree = "<group>"; };
+		2F5425C620F3D05100228CE5 /* lock.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = lock.mdb; sourceTree = "<group>"; };
+		2F5425C720F3D05100228CE5 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		2F5425C820F3D05100228CE5 /* scm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = scm.plist; sourceTree = "<group>"; };
+		2F5425CA20F3D05100228CE5 /* Session.modulevalidation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Session.modulevalidation; sourceTree = "<group>"; };
+		2F5425CC20F3D05100228CE5 /* jpgd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpgd.cpp; sourceTree = "<group>"; };
+		2F5425CD20F3D05100228CE5 /* jpgd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpgd.h; sourceTree = "<group>"; };
+		2F5425CE20F3D05100228CE5 /* jpge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpge.cpp; sourceTree = "<group>"; };
+		2F5425CF20F3D05100228CE5 /* jpge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpge.h; sourceTree = "<group>"; };
+		2F5425D020F3D05100228CE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F5425D120F3D05100228CE5 /* TerraData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TerraData.cpp; sourceTree = "<group>"; };
+		2F5425D220F3D05100228CE5 /* DataCollector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataCollector.cpp; sourceTree = "<group>"; };
+		2F5425D320F3D05100228CE5 /* GitCommit.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = GitCommit.sh; sourceTree = "<group>"; };
+		2F5425D420F3D05100228CE5 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		2F5425D520F3D05100228CE5 /* TerraData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerraData.h; sourceTree = "<group>"; };
+		2F5425D620F3D05100228CE5 /* GeometryData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeometryData.cpp; sourceTree = "<group>"; };
+		2F5425D720F3D05100228CE5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F54259D20F3D01E00228CE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F54259720F3D01E00228CE5 = {
+			isa = PBXGroup;
+			children = (
+				2F5425D220F3D05100228CE5 /* DataCollector.cpp */,
+				2F5425AA20F3D05000228CE5 /* DataCollector.h */,
+				2F5425B420F3D05100228CE5 /* DerivedData */,
+				2F5425D620F3D05100228CE5 /* GeometryData.cpp */,
+				2F5425AC20F3D05100228CE5 /* GeometryData.h */,
+				2F5425D320F3D05100228CE5 /* GitCommit.sh */,
+				2F5425CB20F3D05100228CE5 /* jpeg */,
+				2F5425D720F3D05100228CE5 /* main.cpp */,
+				2F5425D020F3D05100228CE5 /* README.md */,
+				2F5425D120F3D05100228CE5 /* TerraData.cpp */,
+				2F5425D520F3D05100228CE5 /* TerraData.h */,
+				2F5425AD20F3D05100228CE5 /* tinyXML */,
+				2F5425D420F3D05100228CE5 /* Utils.cpp */,
+				2F5425AB20F3D05000228CE5 /* Utils.h */,
+				2F5425A120F3D01E00228CE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F5425A120F3D01E00228CE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425A020F3D01E00228CE5 /* GeoData */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F5425AD20F3D05100228CE5 /* tinyXML */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425AE20F3D05100228CE5 /* tinystr.cpp */,
+				2F5425AF20F3D05100228CE5 /* tinystr.h */,
+				2F5425B020F3D05100228CE5 /* tinyxml.cpp */,
+				2F5425B120F3D05100228CE5 /* tinyxml.h */,
+				2F5425B220F3D05100228CE5 /* tinyxmlerror.cpp */,
+				2F5425B320F3D05100228CE5 /* tinyxmlparser.cpp */,
+			);
+			path = tinyXML;
+			sourceTree = "<group>";
+		};
+		2F5425B420F3D05100228CE5 /* DerivedData */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425B520F3D05100228CE5 /* GeoData */,
+				2F5425C920F3D05100228CE5 /* ModuleCache */,
+			);
+			path = DerivedData;
+			sourceTree = "<group>";
+		};
+		2F5425B520F3D05100228CE5 /* GeoData */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425B620F3D05100228CE5 /* Build */,
+				2F5425BD20F3D05100228CE5 /* Index */,
+				2F5425C720F3D05100228CE5 /* info.plist */,
+				2F5425C820F3D05100228CE5 /* scm.plist */,
+			);
+			path = GeoData;
+			sourceTree = "<group>";
+		};
+		2F5425B620F3D05100228CE5 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425B720F3D05100228CE5 /* Intermediates.noindex */,
+				2F5425BC20F3D05100228CE5 /* Products */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		2F5425B720F3D05100228CE5 /* Intermediates.noindex */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425B820F3D05100228CE5 /* GeoData.build */,
+			);
+			path = Intermediates.noindex;
+			sourceTree = "<group>";
+		};
+		2F5425B820F3D05100228CE5 /* GeoData.build */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425B920F3D05100228CE5 /* Debug */,
+			);
+			path = GeoData.build;
+			sourceTree = "<group>";
+		};
+		2F5425B920F3D05100228CE5 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425BA20F3D05100228CE5 /* GeoData.build */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		2F5425BA20F3D05100228CE5 /* GeoData.build */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425BB20F3D05100228CE5 /* dgph */,
+			);
+			path = GeoData.build;
+			sourceTree = "<group>";
+		};
+		2F5425BC20F3D05100228CE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		2F5425BD20F3D05100228CE5 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425BE20F3D05100228CE5 /* DataStore */,
+				2F5425C120F3D05100228CE5 /* UniDB */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		2F5425BE20F3D05100228CE5 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425BF20F3D05100228CE5 /* v5 */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		2F5425BF20F3D05100228CE5 /* v5 */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425C020F3D05100228CE5 /* units */,
+			);
+			path = v5;
+			sourceTree = "<group>";
+		};
+		2F5425C020F3D05100228CE5 /* units */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = units;
+			sourceTree = "<group>";
+		};
+		2F5425C120F3D05100228CE5 /* UniDB */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425C220F3D05100228CE5 /* GeoData.xcindex */,
+			);
+			path = UniDB;
+			sourceTree = "<group>";
+		};
+		2F5425C220F3D05100228CE5 /* GeoData.xcindex */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425C320F3D05100228CE5 /* v8 */,
+			);
+			path = GeoData.xcindex;
+			sourceTree = "<group>";
+		};
+		2F5425C320F3D05100228CE5 /* v8 */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425C420F3D05100228CE5 /* p47466 */,
+			);
+			path = v8;
+			sourceTree = "<group>";
+		};
+		2F5425C420F3D05100228CE5 /* p47466 */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425C520F3D05100228CE5 /* data.mdb */,
+				2F5425C620F3D05100228CE5 /* lock.mdb */,
+			);
+			path = p47466;
+			sourceTree = "<group>";
+		};
+		2F5425C920F3D05100228CE5 /* ModuleCache */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425CA20F3D05100228CE5 /* Session.modulevalidation */,
+			);
+			path = ModuleCache;
+			sourceTree = "<group>";
+		};
+		2F5425CB20F3D05100228CE5 /* jpeg */ = {
+			isa = PBXGroup;
+			children = (
+				2F5425CC20F3D05100228CE5 /* jpgd.cpp */,
+				2F5425CD20F3D05100228CE5 /* jpgd.h */,
+				2F5425CE20F3D05100228CE5 /* jpge.cpp */,
+				2F5425CF20F3D05100228CE5 /* jpge.h */,
+			);
+			path = jpeg;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F54259F20F3D01E00228CE5 /* GeoData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5425A720F3D01E00228CE5 /* Build configuration list for PBXNativeTarget "GeoData" */;
+			buildPhases = (
+				2F54259C20F3D01E00228CE5 /* Sources */,
+				2F54259D20F3D01E00228CE5 /* Frameworks */,
+				2F54259E20F3D01E00228CE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoData;
+			productName = GeoData;
+			productReference = 2F5425A020F3D01E00228CE5 /* GeoData */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F54259820F3D01E00228CE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = sh;
+				TargetAttributes = {
+					2F54259F20F3D01E00228CE5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F54259B20F3D01E00228CE5 /* Build configuration list for PBXProject "GeoData" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F54259720F3D01E00228CE5;
+			productRefGroup = 2F5425A120F3D01E00228CE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F54259F20F3D01E00228CE5 /* GeoData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F54259C20F3D01E00228CE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5425DB20F3D05100228CE5 /* tinyxmlparser.cpp in Sources */,
+				2F5425DA20F3D05100228CE5 /* tinyxmlerror.cpp in Sources */,
+				2F5425D820F3D05100228CE5 /* tinystr.cpp in Sources */,
+				2F5425DF20F3D05100228CE5 /* DataCollector.cpp in Sources */,
+				2F5425E220F3D05100228CE5 /* main.cpp in Sources */,
+				2F5425E020F3D05100228CE5 /* Utils.cpp in Sources */,
+				2F5425DC20F3D05100228CE5 /* jpgd.cpp in Sources */,
+				2F5425D920F3D05100228CE5 /* tinyxml.cpp in Sources */,
+				2F5425E120F3D05100228CE5 /* GeometryData.cpp in Sources */,
+				2F5425DE20F3D05100228CE5 /* TerraData.cpp in Sources */,
+				2F5425DD20F3D05100228CE5 /* jpge.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F5425A520F3D01E00228CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2F5425A620F3D01E00228CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2F5425A820F3D01E00228CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F5425A920F3D01E00228CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F54259B20F3D01E00228CE5 /* Build configuration list for PBXProject "GeoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5425A520F3D01E00228CE5 /* Debug */,
+				2F5425A620F3D01E00228CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5425A720F3D01E00228CE5 /* Build configuration list for PBXNativeTarget "GeoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5425A820F3D01E00228CE5 /* Debug */,
+				2F5425A920F3D01E00228CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F54259820F3D01E00228CE5 /* Project object */;
+}
